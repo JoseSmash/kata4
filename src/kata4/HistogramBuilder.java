@@ -8,7 +8,7 @@ public class HistogramBuilder<E> {
         this.items = items;
     }
     
-    public Histogram build(){
+    public <A> Histogram <A> build(AtributeExtractor<E,A> extractor){
         Histogram histogram = new Histogram<>();
         for (E item : items) {
             histogram.put(item, histogram.get(item) + 1);
