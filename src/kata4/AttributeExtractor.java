@@ -9,6 +9,6 @@ package kata4;
  *
  * @author usuario
  */
-public interface AtributeExtractor <Entity,Atribute>{
-    public Atribute extract(Entity entity);
+public interface AttributeExtractor <Entity,Attribute>{
+    public Attribute extract(Entity entity);
 }
